@@ -1,0 +1,224 @@
+/**
+header > ul{
+    display: flex;
+    list-style: none;
+    box-shadow: 1px 1px 24px;
+}
+
+header > ul > li{  
+    margin-top: 8px;
+    margin-left: 20%;
+}
+*/
+
+#header1{
+    padding: 10px 10px;
+    display: block;
+    }
+
+#header2{
+    display: none;
+}
+
+#header2 > ul {
+    display: flex;
+    list-style: none;
+    box-shadow: 1px 1px 24px;  
+}
+
+.header2h3{  
+    margin-top: 8px;
+ }
+
+
+h3 {
+  margin-top: 1px;
+}
+
+#windowErr {
+  margin-top: 10%;
+  display: none;
+}
+
+#windowErrMsg {
+  display: block;
+}
+
+#msg-area {
+  background-color: aqua;
+  position: relative;
+  left: 12%;
+}
+
+#roomLb {
+  display: none;
+}
+
+#roomLb2 {
+  display: none;
+}
+
+.roomlb {
+  font-size: 15px;
+  letter-spacing: -1;
+  z-index: 1000;
+  position: fixed;
+  left: 255px;
+  top: -6px;
+  padding: 10px 10px;
+  width: 300px;
+  margin-left: -250px;
+}
+
+#buttonArea {
+  display: none;
+}
+
+#contentWrap {
+  position: relative;
+  top: -3.7%;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+#nickWrap {
+  display: block;
+}
+
+#activeRoom {
+  margin-top: 10%;
+}
+
+#roomSelect {
+  display: none;
+}
+
+#chat {
+  position: absolute;
+  left: 10%;
+  width: 90%;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.panel-body {
+  display: block;
+}
+
+.panel-body2 {
+  display: block;
+}
+
+.img-rounded {
+  margin: 4px;
+}
+
+.btn-stylish {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, -130deg, left bottom, from(#495C84 10%) to (#000 55%) to (#2B87E2 100%));
+  background-image: -webkit-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: -moz-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: linear-gradient(130deg, #495C84 10%, #000, 75%, #2B87E2 100%);
+  color: cyan;
+  border: 0px solid transparent;
+  white-space: nowrap;
+  padding: 10px 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-stylish-center {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-stylish {
+  border-radius: 25%;
+  position: relative;
+  width: 50%;
+}
+
+.list-group-item2 {
+  position: relative;
+  top: 9px;
+  left: 10px;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+}
+
+.ul-stylish {
+  color: cyan;
+  background-image: -webkit-gradient(linear, 130deg, left bottom, from(#495C84 10%) to (#000 55%) to (#2B87E2 100%));
+  background-image: -webkit-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: -moz-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: linear-gradient(130deg, #495C84 10%, #000, 75%, #2B87E2 100%);
+}
+
+.ul-stylish2 {
+  background-image: -webkit-gradient(linear, -130deg, left bottom, from(#495C84 10%) to (#000 55%) to (#434396 100%));
+  background-image: -webkit-linear-gradient(130deg, #495C84 10%, #000 55%, #434396 100%);
+  background-image: -moz-linear-gradient(130deg, #495C84 10%, #000 55%, #434396 100%);
+  background-image: linear-gradient(130deg, #495C84 10%, #000 55%, #434396 100%);
+  border-radius: 50%
+}
+
+
+/*.end{
+    position: relative;
+    top: 18px;
+    left:20px;
+    
+}
+*/
+
+.td-stylish {
+  background-image: -webkit-gradient(linear, -30deg, left bottom, from(#495C84 10%) to (#000 55%) to (#434396 100%));
+  background-image: -webkit-linear-gradient(-30deg, #495C84 10%, #000 55%, #434396 100%);
+  background-image: -moz-linear-gradient(-30deg, #495C84 10%, #000 55%, #434396 100%);
+  background-image: linear-gradient(-30deg, #495C84 10%, #000 50%, #434396 100%);
+}
+
+.modal-content-stylish {
+  position: relative;
+  left: 15%;
+  background-image: -webkit-gradient(linear, -130deg, left bottom, from(#495C84 10%) to (#000 55%) to (#2B87E2 100%));
+  background-image: -webkit-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: -moz-linear-gradient(130deg, #495C84 10%, #000, 50%, #2B87E2 100%);
+  background-image: linear-gradient(130deg, #495C84 10%, #000, 75%, #2B87E2 100%);
+  border: 1px solid #999999;
+  border: 1px solid transparent;
+  padding: -18px -20px;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 13px 19px rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+
+.modal-body-stylish {
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.group-item {
+  color: cyan;
+}

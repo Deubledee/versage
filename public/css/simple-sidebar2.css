@@ -1,0 +1,130 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper2 {
+    position: absolute;
+    top: 0%;
+    float: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled2 {
+    padding-right: 0px;
+
+}
+
+#sidebar-wrapper2 {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: fixed;
+    top: 70px;
+    right: 1px;
+    width: 0;
+    height: 100%;    
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper2.toggled #sidebar-wrapper2 {
+    width: 100px;
+}
+
+#page-content-wrapper2 {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+
+}
+
+#wrapper.toggled #page-content-wrapper2 {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav2 {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.sidebar-nav2 li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav2 li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav2 li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav2 li a:active,
+.sidebar-nav2 li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav2 > .sidebar-brand2 {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav2 > .sidebar-brand2 a {
+    color: blue;
+}
+
+.sidebar-nav2 > .sidebar-brand2 a:hover {
+      color: red;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper2 {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled2 {
+        padding-right: 0;
+    }
+
+    #sidebar-wrapper2 {
+        width: 0px;
+    }
+
+    #wrapper2.toggled #sidebar-wrapper2 {
+        width: 0;
+    }
+
+    #page-content-wrapper2 {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper2.toggled #page-content-wrapper2 {
+        position: relative;
+        margin-left: 0;
+    }
+}

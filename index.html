@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Latest compiled and minified CSS -->
+ <link type="text/css" rel="stylesheet" href="css/bootswatch/spacelab/bootstrap.min.css">
+ <link type="text/css" rel="stylesheet" href="css/google-api.css">
+ <link type="text/css" rel="stylesheet" href="css/stylish.css">
+ <link type="text/css" rel="stylesheet" href="css/style2.css">
+ <link href="css/simple-sidebar.css" rel="stylesheet">
+ <link href="css/simple-sidebar2.css" rel="stylesheet">
+ <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+ </head>
+</head>
+
+<body>
+<nav id="header2" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="row">
+
+        <div class="col-xs-4">
+       <button type="button" class="btn btn-primary navbar-btn" onclick="toggleSidebar('sidebar-wrapper')">
+            Users
+         </button>
+          </div>
+            <div class="col-xs-4 text-center ">
+                    <h3 class="header2h3"><b>Versage</b></h3>
+
+              </div>
+              <div class=" col-xs-4">
+       <button type="button" class="btn btn-primary navbar-btn pull-right" onclick="toggleSidebar2('sidebar-wrapper2')">
+            Rooms
+
+        </button>
+        </div>
+        </div>
+      </div>
+</nav>
+
+    <nav id="header1" class="text-center navbar navbar-default">
+
+                 <div class="col-xs-12 text-center ">
+                    <h3><b>Versage</b></h3>
+
+              </div>
+
+    </nav>
+    <div class="content modal" id="windowErr">
+        <div class="row" tabindex="-1" role="dialog" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content-primary navbar-default col-xs-8" id="activeRoom">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="errorhandler()">×</button>
+                    <div class="text-center col-xs-12"> <h3><b id="errorHeader">ERROR</b></h3></div>
+                    </div>
+                    <div class="modal-body-primary">
+                        <div class="form col-lg-12 center-block">
+                            <div class="form-group" id="windowErrMsg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="content" id="nickWrap">
+    <div class="row " tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content-primary navbar-default col-xs-8">
+                <div class="modal-header">
+                   <div class="text-center col-xs-12"> <h3><b>Login</b></h3></div>
+                </div>
+                <div class="modal-body-primary">
+                    <div class="form col-lg-12 center-block">
+                            <div class="form-group">
+                                <input id="nickname" type="text" class="form-control input-xs" placeholder="Nickname">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control input-xs" placeholder="Password" id="nickname">
+                            </div>
+                            <div class="form-group">
+
+                                <button class="btn btn-default btn-xm btn-block" onclick="start('public')">Sign In</button>
+                                <span><a href="#">Register</a></span><span><a href="#"> <button class="img-rounded label label-primary pull-right">Cancel</button><br></a></span>
+
+                            </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </div>
+ </div>
+
+<div id="contentWrap">
+    <div id="wrapper">
+    <!-- Sidebar -->
+          <div id="sidebar-wrapper">
+             <div class="sidebar-nav panel panel-primary">
+                <div  id="roomLb"class="panel-heading">
+                    <h3 class="panel-title" id="roomLb2">room public user diogo</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-xs-12" id="users">
+
+                    </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+   <div id="page-content-wrapper" class="scrollbar">
+        <div class="col-xs-9" id="chat">
+
+        </div>
+
+        <div id="wrapper2">
+    <!-- Sidebar -->
+          <div id="sidebar-wrapper2">
+             <div class="sidebar-nav panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Rooms</h3>
+                </div>
+                <div class="panel-danger">
+                    <div class="col-xs-12" id="buttonArea">
+
+                    </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+  </div>
+
+    <nav class="navbar  navbar-fixed-bottom navbar-inverse">
+        <div class="container-fluid">
+            <div class="input-group btn-group btn-group-lg inputWapper">
+                <input type="text" class="form-control input" placeholder="message" id="message" aria-describedby="basic-addon2">
+                <span class="input-group-addon " id="basic-addon2"> <button class="btn-group btn-group-lg btn-primary" onclick="newMessage()">Send</button></span>
+            </div>
+        </div>
+    </nav>
+  </div>
+</body>
+
+<script src="js/togleandclose.js"></script>
+<script src="js/chatclient.js"></script>
+</html>
